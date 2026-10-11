@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+psycopg[binary]
+redis
+boto3
+httpx
+pytest
+python-dotenv
