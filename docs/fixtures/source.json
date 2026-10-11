@@ -1,0 +1,67 @@
+{
+  "section": "source",
+  "title": "Source Match",
+  "submitted_clip": {
+    "url": "https://archive.org/details/cspan-senator-example-2019",
+    "title": "Senator's remarks on the infrastructure bill",
+    "duration_seconds": 14.2,
+    "published_at": null
+  },
+  "source_video": {
+    "url": "https://archive.org/details/cspan-senator-full-2019",
+    "title": "Senate floor remarks on the infrastructure bill — full session",
+    "publisher": "C-SPAN",
+    "published_at": "2019-04-11T15:00:00Z",
+    "duration_seconds": 412.5
+  },
+  "matches": [
+    {
+      "match_id": "match_001",
+      "clip_start_seconds": 0.0,
+      "clip_end_seconds": 9.4,
+      "source_start_seconds": 128.0,
+      "source_end_seconds": 137.4,
+      "quote": "This bill is not about what's in it. It is about who gets to say what's in it.",
+      "evidence": [
+        {
+          "method": "transcript_alignment",
+          "description": "The distinctive spoken passage aligns with 97% token overlap."
+        }
+      ]
+    },
+    {
+      "match_id": "match_002",
+      "clip_start_seconds": 10.0,
+      "clip_end_seconds": 14.2,
+      "source_start_seconds": 154.2,
+      "source_end_seconds": 158.4,
+      "quote": "Anyone who tells you otherwise has not read the bill.",
+      "evidence": [
+        {
+          "method": "transcript_alignment",
+          "description": "Second passage aligns; short but verbatim."
+        }
+      ]
+    }
+  ],
+  "coverage_ratio": 0.97,
+  "matched_clip_seconds": 13.8,
+  "match_confidence": {
+    "level": "high",
+    "basis": [
+      "Two spoken passages align verbatim, including a distinctive proper-noun phrase.",
+      "Timestamps map cleanly with no ambiguous candidate."
+    ],
+    "limitations": [
+      "Visual and audio fingerprinting were not performed; alignment relies on transcript."
+    ]
+  },
+  "unmatched_clip_segments": [
+    {
+      "start_seconds": 9.4,
+      "end_seconds": 10.0,
+      "reason": "Short pause between matched passages."
+    }
+  ],
+  "summary": "Both passages in the clip match the C-SPAN source verbatim. The clip is 97% covered by the source material."
+}
