@@ -1,0 +1,60 @@
+{
+  "section": "historical_parallels",
+  "title": "Historical Parallels",
+  "parallels": [
+    {
+      "parallel_id": "parallel_001",
+      "statement": "This bill is not about what's in it. It is about who gets to say what's in it.",
+      "historical_match": {
+        "figure": "Senator Everett Dirksen",
+        "year": 1964,
+        "context": "Senate debate on the Civil Rights Act",
+        "quote": "This is not a bill about rights. It is a bill about who decides what rights mean.",
+        "source_url": "https://www.senate.gov/artandhistory/history/example"
+      },
+      "similarity": "rhetorical pattern",
+      "explanation": "Both statements reframe a policy dispute as a procedural one. The rhetorical structure is nearly identical.",
+      "confidence": {
+        "level": "moderate",
+        "basis": [
+          "The two statements share the same syntactic structure and argumentative move."
+        ],
+        "limitations": [
+          "Rhetorical similarity does not imply influence or coordination."
+        ]
+      }
+    },
+    {
+      "parallel_id": "parallel_002",
+      "statement": "Anyone who tells you otherwise has not read the bill.",
+      "historical_match": {
+        "figure": "Representative Tip O'Neill",
+        "year": 1982,
+        "context": "House debate on the Tax Equity and Fiscal Responsibility Act",
+        "quote": "Anyone who says this bill is simple has not read it.",
+        "source_url": "https://www.congress.gov/congressional-record/example"
+      },
+      "similarity": "rhetorical pattern",
+      "explanation": "Dismissive framing that shifts the burden onto the opponent's preparation rather than the argument itself.",
+      "confidence": {
+        "level": "moderate",
+        "basis": [
+          "Same rhetorical move; short phrase overlap."
+        ],
+        "limitations": [
+          "Common phrasing; may not indicate any relationship."
+        ]
+      }
+    }
+  ],
+  "confidence": {
+    "level": "moderate",
+    "basis": [
+      "Both parallels were identified from publicly available historical records."
+    ],
+    "limitations": [
+      "Historical parallels describe rhetorical similarity only. They do not establish intent, coordination, or plagiarism."
+    ]
+  },
+  "summary": "Two historical statements share rhetorical patterns with the clip. This is a stylistic observation, not an accusation."
+}
