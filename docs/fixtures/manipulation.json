@@ -1,0 +1,57 @@
+{
+  "section": "manipulation_check",
+  "title": "Manipulation Check",
+  "overall": "signals_detected",
+  "overall_explanation": "Two weak signals were detected at the clip's internal transition. Neither is conclusive.",
+  "signals": [
+    {
+      "signal_id": "signal_001",
+      "type": "audio_cut",
+      "at_seconds": 9.4,
+      "confidence": {
+        "level": "moderate",
+        "basis": [
+          "A sharp amplitude discontinuity was detected at 9.4 seconds.",
+          "The surrounding ambient audio does not match across the boundary."
+        ],
+        "limitations": [
+          "Legitimate edits (e.g. breathing pause removal) can produce the same signature.",
+          "No reference recording of the raw audio was available for comparison."
+        ]
+      },
+      "explanation": "Audio appears spliced at 9.4 seconds; the pitch and room tone change subtly."
+    },
+    {
+      "signal_id": "signal_002",
+      "type": "video_cut",
+      "at_seconds": 9.4,
+      "confidence": {
+        "level": "low",
+        "basis": [
+          "A frame-level discontinuity was detected at the same timestamp as the audio cut."
+        ],
+        "limitations": [
+          "A single-frame cut is common in edited broadcast footage.",
+          "Frame-level analysis cannot distinguish editorial cuts from adversarial splicing."
+        ]
+      },
+      "explanation": "A frame boundary coincides with the audio splice. This may be ordinary broadcast editing."
+    }
+  ],
+  "deepfake_assessment": {
+    "status": "not_assessed",
+    "reason": "Deepfake detection requires a reference recording of the same speaker under similar conditions. None was available."
+  },
+  "confidence": {
+    "level": "moderate",
+    "basis": [
+      "Two independent signals coincide at 9.4 seconds."
+    ],
+    "limitations": [
+      "Neither signal is conclusive on its own.",
+      "The clip may be an ordinary broadcast edit rather than adversarial manipulation.",
+      "Deepfake detection was not performed."
+    ]
+  },
+  "summary": "Two weak signals suggest a splice at 9.4 seconds. This could be ordinary editing or adversarial manipulation; the evidence does not distinguish between them."
+}
