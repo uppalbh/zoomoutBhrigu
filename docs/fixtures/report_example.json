@@ -1,0 +1,357 @@
+{
+  "schema_version": "2.1",
+  "report_id": "report_demo_001",
+  "job_id": "job_demo_001",
+  "generated_at": "2026-10-10T17:10:00Z",
+  "outcome": "matched",
+  "submitted": {
+    "post": {
+      "post_id": "post_clip_001",
+      "post_url": "https://archive.org/details/cspan-senator-example-2019",
+      "platform": "archive.org",
+      "title": "Senator's remarks on the infrastructure bill",
+      "caption": "Senator says infrastructure bill is historically expensive.",
+      "published_at": null,
+      "author": {
+        "handle": "archive_user_example",
+        "display_name": null,
+        "verified": null,
+        "followers_count": null,
+        "following_count": null
+      },
+      "media": {
+        "media_id": "media_clip_001",
+        "mime_type": "video/mp4",
+        "playback_url": "https://media.example.dev/clips/media_clip_001.mp4",
+        "duration_seconds": 14.2
+      }
+    },
+    "transcript": {
+      "status": "complete",
+      "processed_ranges": [
+        { "start_seconds": 0.0, "end_seconds": 14.2 }
+      ],
+      "sentences": [
+        {
+          "sentence_id": "clip_s_001",
+          "start_seconds": 0.0,
+          "end_seconds": 5.0,
+          "text": "This bill is not about what's in it.",
+          "speaker_id": null
+        },
+        {
+          "sentence_id": "clip_s_002",
+          "start_seconds": 5.0,
+          "end_seconds": 9.4,
+          "text": "It is about who gets to say what's in it.",
+          "speaker_id": null
+        },
+        {
+          "sentence_id": "clip_s_003",
+          "start_seconds": 10.0,
+          "end_seconds": 14.2,
+          "text": "Anyone who tells you otherwise has not read the bill.",
+          "speaker_id": null
+        }
+      ]
+    }
+  },
+  "source": {
+    "post": {
+      "post_id": "post_source_001",
+      "candidate_id": "candidate_001",
+      "post_url": "https://archive.org/details/cspan-senator-full-2019",
+      "platform": "archive.org",
+      "title": "Senate floor remarks on the infrastructure bill — full session",
+      "caption": null,
+      "published_at": "2019-04-11T15:00:00Z",
+      "author": {
+        "handle": "cspan",
+        "display_name": "C-SPAN",
+        "verified": true,
+        "followers_count": null,
+        "following_count": null
+      },
+      "media": {
+        "media_id": "media_source_001",
+        "mime_type": "video/mp4",
+        "playback_url": "https://media.example.dev/sources/media_source_001.mp4",
+        "duration_seconds": 412.5
+      }
+    },
+    "transcript": {
+      "status": "complete",
+      "processed_ranges": [
+        { "start_seconds": 0.0, "end_seconds": 412.5 }
+      ],
+      "sentences": [
+        {
+          "sentence_id": "src_s_001",
+          "start_seconds": 128.0,
+          "end_seconds": 133.0,
+          "text": "This bill is not about what's in it.",
+          "speaker_id": null
+        },
+        {
+          "sentence_id": "src_s_002",
+          "start_seconds": 133.0,
+          "end_seconds": 137.4,
+          "text": "It is about who gets to say what's in it.",
+          "speaker_id": null
+        },
+        {
+          "sentence_id": "src_s_003",
+          "start_seconds": 154.2,
+          "end_seconds": 158.4,
+          "text": "Anyone who tells you otherwise has not read the bill.",
+          "speaker_id": null
+        }
+      ]
+    }
+  },
+  "source_match": {
+    "section": "source",
+    "title": "Source Match",
+    "submitted_clip": {
+      "url": "https://archive.org/details/cspan-senator-example-2019",
+      "title": "Senator's remarks on the infrastructure bill",
+      "duration_seconds": 14.2,
+      "published_at": null
+    },
+    "source_video": {
+      "url": "https://archive.org/details/cspan-senator-full-2019",
+      "title": "Senate floor remarks on the infrastructure bill — full session",
+      "publisher": "C-SPAN",
+      "published_at": "2019-04-11T15:00:00Z",
+      "duration_seconds": 412.5
+    },
+    "matches": [
+      {
+        "match_id": "match_001",
+        "clip_start_seconds": 0.0,
+        "clip_end_seconds": 9.4,
+        "source_start_seconds": 128.0,
+        "source_end_seconds": 137.4,
+        "quote": "This bill is not about what's in it. It is about who gets to say what's in it.",
+        "evidence": [
+          {
+            "method": "transcript_alignment",
+            "description": "The distinctive spoken passage aligns with 97% token overlap."
+          }
+        ]
+      },
+      {
+        "match_id": "match_002",
+        "clip_start_seconds": 10.0,
+        "clip_end_seconds": 14.2,
+        "source_start_seconds": 154.2,
+        "source_end_seconds": 158.4,
+        "quote": "Anyone who tells you otherwise has not read the bill.",
+        "evidence": [
+          {
+            "method": "transcript_alignment",
+            "description": "Second passage aligns; short but verbatim."
+          }
+        ]
+      }
+    ],
+    "coverage_ratio": 0.97,
+    "matched_clip_seconds": 13.8,
+    "match_confidence": {
+      "level": "high",
+      "basis": [
+        "Two spoken passages align verbatim, including a distinctive proper-noun phrase.",
+        "Timestamps map cleanly with no ambiguous candidate."
+      ],
+      "limitations": [
+        "Visual and audio fingerprinting were not performed; alignment relies on transcript."
+      ]
+    },
+    "unmatched_clip_segments": [
+      {
+        "start_seconds": 9.4,
+        "end_seconds": 10.0,
+        "reason": "Short pause between matched passages."
+      }
+    ],
+    "summary": "Both passages in the clip match the C-SPAN source verbatim. The clip is 97% covered by the source material."
+  },
+  "fact_check": {
+    "section": "fact_check",
+    "title": "Fact Check",
+    "claims": [
+      {
+        "claim_id": "claim_001",
+        "claim": "This bill spends more than any infrastructure bill in history.",
+        "verdict": "contradicted",
+        "explanation": "Adjusted for inflation, the 1956 Federal-Aid Highway Act and the 2009 American Recovery Act both exceed this bill's spending on infrastructure in real terms.",
+        "sources": [
+          {
+            "title": "Congressional Budget Office — Historical spending on surface transportation",
+            "url": "https://www.cbo.gov/publication/example"
+          },
+          {
+            "title": "Bureau of Labor Statistics — CPI-U adjustment series",
+            "url": "https://www.bls.gov/cpi/example"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_002",
+        "claim": "The bill includes funding for rural broadband.",
+        "verdict": "supported",
+        "explanation": "The bill text allocates $42.5 billion to rural broadband deployment, matching the speaker's description.",
+        "sources": [
+          {
+            "title": "Bill text, Title IV, Section 401",
+            "url": "https://www.congress.gov/bill/example"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_003",
+        "claim": "The speaker voted against this bill.",
+        "verdict": "unclear",
+        "explanation": "No roll-call vote has been recorded for this version of the bill. The speaker has voted against earlier drafts.",
+        "sources": []
+      }
+    ],
+    "overall_assessment": "mixed",
+    "confidence": {
+      "level": "moderate",
+      "basis": [
+        "Two of three claims could be checked against primary sources.",
+        "One claim depends on a vote that has not occurred."
+      ],
+      "limitations": [
+        "Fact-checking relies on public sources at the time of analysis; later data may change verdicts.",
+        "The clip's captions and audio were not independently verified against the source recording."
+      ]
+    },
+    "summary": "Two claims are checkable. One is contradicted by historical spending data; one is supported by bill text. A third claim depends on an upcoming vote and remains unclear."
+  },
+  "historical_parallels": {
+    "section": "historical_parallels",
+    "title": "Historical Parallels",
+    "parallels": [
+      {
+        "parallel_id": "parallel_001",
+        "statement": "This bill is not about what's in it. It is about who gets to say what's in it.",
+        "historical_match": {
+          "figure": "Senator Everett Dirksen",
+          "year": 1964,
+          "context": "Senate debate on the Civil Rights Act",
+          "quote": "This is not a bill about rights. It is a bill about who decides what rights mean.",
+          "source_url": "https://www.senate.gov/artandhistory/history/example"
+        },
+        "similarity": "rhetorical pattern",
+        "explanation": "Both statements reframe a policy dispute as a procedural one. The rhetorical structure is nearly identical.",
+        "confidence": {
+          "level": "moderate",
+          "basis": [
+            "The two statements share the same syntactic structure and argumentative move."
+          ],
+          "limitations": [
+            "Rhetorical similarity does not imply influence or coordination."
+          ]
+        }
+      },
+      {
+        "parallel_id": "parallel_002",
+        "statement": "Anyone who tells you otherwise has not read the bill.",
+        "historical_match": {
+          "figure": "Representative Tip O'Neill",
+          "year": 1982,
+          "context": "House debate on the Tax Equity and Fiscal Responsibility Act",
+          "quote": "Anyone who says this bill is simple has not read it.",
+          "source_url": "https://www.congress.gov/congressional-record/example"
+        },
+        "similarity": "rhetorical pattern",
+        "explanation": "Dismissive framing that shifts the burden onto the opponent's preparation rather than the argument itself.",
+        "confidence": {
+          "level": "moderate",
+          "basis": [
+            "Same rhetorical move; short phrase overlap."
+          ],
+          "limitations": [
+            "Common phrasing; may not indicate any relationship."
+          ]
+        }
+      }
+    ],
+    "confidence": {
+      "level": "moderate",
+      "basis": [
+        "Both parallels were identified from publicly available historical records."
+      ],
+      "limitations": [
+        "Historical parallels describe rhetorical similarity only. They do not establish intent, coordination, or plagiarism."
+      ]
+    },
+    "summary": "Two historical statements share rhetorical patterns with the clip. This is a stylistic observation, not an accusation."
+  },
+  "manipulation_check": {
+    "section": "manipulation_check",
+    "title": "Manipulation Check",
+    "overall": "signals_detected",
+    "overall_explanation": "Two weak signals were detected at the clip's internal transition. Neither is conclusive.",
+    "signals": [
+      {
+        "signal_id": "signal_001",
+        "type": "audio_cut",
+        "at_seconds": 9.4,
+        "confidence": {
+          "level": "moderate",
+          "basis": [
+            "A sharp amplitude discontinuity was detected at 9.4 seconds.",
+            "The surrounding ambient audio does not match across the boundary."
+          ],
+          "limitations": [
+            "Legitimate edits (e.g. breathing pause removal) can produce the same signature.",
+            "No reference recording of the raw audio was available for comparison."
+          ]
+        },
+        "explanation": "Audio appears spliced at 9.4 seconds; the pitch and room tone change subtly."
+      },
+      {
+        "signal_id": "signal_002",
+        "type": "video_cut",
+        "at_seconds": 9.4,
+        "confidence": {
+          "level": "low",
+          "basis": [
+            "A frame-level discontinuity was detected at the same timestamp as the audio cut."
+          ],
+          "limitations": [
+            "A single-frame cut is common in edited broadcast footage.",
+            "Frame-level analysis cannot distinguish editorial cuts from adversarial splicing."
+          ]
+        },
+        "explanation": "A frame boundary coincides with the audio splice. This may be ordinary broadcast editing."
+      }
+    ],
+    "deepfake_assessment": {
+      "status": "not_assessed",
+      "reason": "Deepfake detection requires a reference recording of the same speaker under similar conditions. None was available."
+    },
+    "confidence": {
+      "level": "moderate",
+      "basis": [
+        "Two independent signals coincide at 9.4 seconds."
+      ],
+      "limitations": [
+        "Neither signal is conclusive on its own.",
+        "The clip may be an ordinary broadcast edit rather than adversarial manipulation.",
+        "Deepfake detection was not performed."
+      ]
+    },
+    "summary": "Two weak signals suggest a splice at 9.4 seconds. This could be ordinary editing or adversarial manipulation; the evidence does not distinguish between them."
+  },
+  "summary": "The clip matches a C-SPAN source with 97% coverage. One factual claim is contradicted. Two rhetorical parallels were noted. Two weak manipulation signals were detected at 9.4 seconds; neither is conclusive.",
+  "limitations": [
+    "Visual and audio fingerprinting were not performed.",
+    "Deepfake detection was not performed.",
+    "Fact-checking relies on public sources at the time of analysis.",
+    "Historical parallels describe rhetorical similarity only."
+  ]
+}
