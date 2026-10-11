@@ -1,0 +1,54 @@
+{
+  "section": "fact_check",
+  "title": "Fact Check",
+  "claims": [
+    {
+      "claim_id": "claim_001",
+      "claim": "This bill spends more than any infrastructure bill in history.",
+      "verdict": "contradicted",
+      "explanation": "Adjusted for inflation, the 1956 Federal-Aid Highway Act and the 2009 American Recovery Act both exceed this bill's spending on infrastructure in real terms.",
+      "sources": [
+        {
+          "title": "Congressional Budget Office — Historical spending on surface transportation",
+          "url": "https://www.cbo.gov/publication/example"
+        },
+        {
+          "title": "Bureau of Labor Statistics — CPI-U adjustment series",
+          "url": "https://www.bls.gov/cpi/example"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_002",
+      "claim": "The bill includes funding for rural broadband.",
+      "verdict": "supported",
+      "explanation": "The bill text allocates $42.5 billion to rural broadband deployment, matching the speaker's description.",
+      "sources": [
+        {
+          "title": "Bill text, Title IV, Section 401",
+          "url": "https://www.congress.gov/bill/example"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_003",
+      "claim": "The speaker voted against this bill.",
+      "verdict": "unclear",
+      "explanation": "No roll-call vote has been recorded for this version of the bill. The speaker has voted against earlier drafts.",
+      "sources": []
+    }
+  ],
+  "overall_assessment": "mixed",
+  "confidence": {
+    "level": "moderate",
+    "basis": [
+      "Two of three claims could be checked against primary sources.",
+      "One claim depends on a vote that has not occurred."
+    ],
+    "limitations": [
+      "Fact-checking relies on public sources at the time of analysis; later data may change verdicts.",
+      "The clip's captions and audio were not independently verified against the source recording."
+    ]
+  },
+  "summary": "Two claims are checkable. One is contradicted by historical spending data; one is supported by bill text. A third claim depends on an upcoming vote and remains unclear."
+}
